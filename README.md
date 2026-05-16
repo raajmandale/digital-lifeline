@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" width="1000" alt="Digital Lifeline Banner">
+  <img src="./assets/svg/banner.svg" width="1000" alt="Digital Lifeline Banner">
 </p>
 
 <h1 align="center">Digital Lifeline</h1>
@@ -54,7 +54,7 @@ The goal is simple:
 # ⚡ Survivability Pipeline
 
 <p align="center">
-  <img src="./assets/svg/digital-lifeline-architecture.svg" width="1000" alt="Digital Lifeline Architecture">
+  <img src="./assets/svg/digital_lifeline_architecture.svg" width="1000" alt="Digital Lifeline Architecture">
 </p>
 
 <p align="center">
