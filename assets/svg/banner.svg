@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="950" viewBox="0 0 1800 950">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#020611"/>
+<stop offset="60%" stop-color="#071426"/>
+<stop offset="100%" stop-color="#020611"/>
+</linearGradient>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="14" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<style>
+.spinA{animation:spin 18s linear infinite;transform-origin:900px 470px}
+.spinB{animation:spinR 28s linear infinite;transform-origin:900px 470px}
+.pulse{animation:pulse 2.6s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinR{to{transform:rotate(-360deg)}}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+</style>
+</defs>
+
+<rect width="1800" height="950" fill="url(#bg)"/>
+
+<circle cx="900" cy="470" r="430" fill="#1dafff" opacity=".08"/>
+<circle cx="900" cy="470" r="320" fill="#ff8b26" opacity=".05"/>
+
+<g filter="url(#glow)">
+<g class="spinA">
+<circle cx="900" cy="470" r="320" fill="none" stroke="#1dafff" stroke-opacity=".25" stroke-width="2" stroke-dasharray="14 18"/>
+</g>
+
+<g class="spinB">
+<circle cx="900" cy="470" r="250" fill="none" stroke="#ff8b26" stroke-opacity=".35" stroke-width="2" stroke-dasharray="18 12"/>
+</g>
+
+<circle cx="900" cy="470" r="190" fill="#020611" stroke="#6ce7ff" stroke-width="3"/>
+<circle class="pulse" cx="900" cy="470" r="90" fill="#1dafff" opacity=".2"/>
+
+<text x="900" y="240" text-anchor="middle" fill="#fff" font-size="120" font-family="Inter,Arial" font-weight="900">
+XPADI
+</text>
+
+<text x="900" y="330" text-anchor="middle" fill="#71dfff" font-size="28" font-family="Inter,Arial" font-weight="800" letter-spacing="10">
+SURVIVABILITY REACTOR
+</text>
+
+<text x="900" y="450" text-anchor="middle" fill="#71dfff" font-size="24" font-family="Inter,Arial" font-weight="800" letter-spacing="8">
+OWNER
+</text>
+
+<text x="900" y="520" text-anchor="middle" fill="#fff" font-size="72" font-family="Inter,Arial" font-weight="900">
+RECOVERY
+</text>
+
+<text x="900" y="585" text-anchor="middle" fill="#b9c7d8" font-size="24" font-family="Inter,Arial" font-weight="700" letter-spacing="6">
+CONTINUITY REACTOR
+</text>
+
+<text x="900" y="760" text-anchor="middle" fill="#fff" font-size="58" font-family="Inter,Arial" font-weight="900">
+Attack Success <tspan fill="#ff8b26">≠ Data Loss</tspan>
+</text>
+</g>
+
+</svg>

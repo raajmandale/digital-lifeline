@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" width="1600" height="760" role="img" aria-label="Digital Lifeline animated architecture overview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020711"/>
+      <stop offset="0.45" stop-color="#07162a"/>
+      <stop offset="1" stop-color="#090c14"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a2e" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#0b1220" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="cyanOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#69e8ff"/>
+      <stop offset="0.52" stop-color="#66a8ff"/>
+      <stop offset="1" stop-color="#ff9a2f"/>
+    </linearGradient>
+    <linearGradient id="arrowBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#59dfff"/>
+      <stop offset="1" stop-color="#8abfff"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7ff6ff" stop-opacity="1"/>
+      <stop offset="0.32" stop-color="#19baff" stop-opacity="0.55"/>
+      <stop offset="0.72" stop-color="#ff8a24" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L18,9 L0,18 Z" fill="#8ac7ff"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L18,9 L0,18 Z" fill="#ff9a2f"/>
+    </marker>
+    <style>
+      .font{font-family:Inter,Segoe UI,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+      .box{fill:url(#panel);stroke:#334159;stroke-width:2.4}.boxHot{fill:url(#panel);stroke:#6feaff;stroke-width:2.4}.boxOrange{fill:url(#panel);stroke:#ff9433;stroke-width:2.4}
+      .small{font-size:17px;fill:#c6d7ee}.tiny{font-size:13px;fill:#7fa0c2;letter-spacing:.12em}.title{font-size:38px;font-weight:900;fill:#f5fbff}.sub{font-size:18px;fill:#d8edff}.h{font-size:23px;font-weight:800;fill:#f5fbff}.label{font-size:17px;font-weight:700;fill:#eef7ff}
+      .flow{fill:none;stroke:url(#cyanOrange);stroke-width:4;stroke-linecap:round;stroke-dasharray:10 14;filter:url(#glow);animation:dash 4.5s linear infinite}.flowB{fill:none;stroke:#78c8ff;stroke-width:3;stroke-linecap:round;stroke-dasharray:8 13;opacity:.75;animation:dash 5.5s linear infinite}.flowO{fill:none;stroke:#ff9a2f;stroke-width:3;stroke-linecap:round;stroke-dasharray:8 13;opacity:.8;animation:dash 6s linear infinite reverse}
+      .pulse{animation:pulse 2.4s ease-in-out infinite}.float{animation:float 4s ease-in-out infinite}.blink{animation:blink 1.8s ease-in-out infinite}.orbit{transform-origin:800px 415px;animation:spin 22s linear infinite}.orbit2{transform-origin:800px 415px;animation:spin 30s linear infinite reverse}
+      .scan{animation:scan 5s ease-in-out infinite}.signal{animation:signal 2.2s ease-in-out infinite}.card:hover{filter:url(#glow)}
+      @keyframes dash{to{stroke-dashoffset:-180}}@keyframes pulse{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.035)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}@keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes scan{0%{transform:translateX(-240px);opacity:0}20%,80%{opacity:.8}100%{transform:translateX(1300px);opacity:0}}@keyframes signal{0%{r:3;opacity:1}100%{r:18;opacity:0}}
+    </style>
+  </defs>
+  <rect width="1600" height="760" fill="url(#bg)"/>
+  <g opacity=".18">
+    <path d="M0 80H1600M0 160H1600M0 240H1600M0 320H1600M0 400H1600M0 480H1600M0 560H1600M0 640H1600" stroke="#26608e"/>
+    <path d="M80 0V760M160 0V760M240 0V760M320 0V760M400 0V760M480 0V760M560 0V760M640 0V760M720 0V760M800 0V760M880 0V760M960 0V760M1040 0V760M1120 0V760M1200 0V760M1280 0V760M1360 0V760M1440 0V760M1520 0V760" stroke="#26608e"/>
+  </g>
+  <rect x="34" y="32" width="1532" height="696" rx="28" fill="#09111f" opacity=".74" stroke="#2d3d56" stroke-width="3"/>
+  <rect class="scan" x="0" y="33" width="260" height="694" fill="url(#cyanOrange)" opacity=".06"/>
+
+  <text x="78" y="100" class="font title">Digital Lifeline — Architecture Overview</text>
+  <text x="78" y="136" class="font sub">Survivability pipeline: Fragment → Encrypt → Distribute → Multi-Sink Storage → Reconstruct</text>
+  <text x="78" y="166" class="font tiny">PUBLIC-SAFE ARCHITECTURE VIEW • NO PRIVATE RECOVERY INTERNALS EXPOSED</text>
+
+  <!-- Main flow cards -->
+  <g class="font float">
+    <rect class="box" x="92" y="230" width="220" height="120" rx="18"/>
+    <text class="h" x="126" y="278">User File</text><text class="small" x="126" y="308">Original data</text>
+  </g>
+  <g class="font float" style="animation-delay:.3s">
+    <rect class="boxHot" x="380" y="216" width="260" height="146" rx="18"/>
+    <text class="h" x="408" y="268">Fragment Engine</text><text class="small" x="408" y="300">Split into fragments</text><text class="small" x="408" y="330">Remove single failure</text>
+  </g>
+  <g class="font float" style="animation-delay:.6s">
+    <rect class="box" x="680" y="216" width="260" height="146" rx="18"/>
+    <text class="h" x="708" y="268">Encryption Layer</text><text class="small" x="708" y="300">Encrypt each fragment</text><text class="small" x="708" y="330">Before distribution</text>
+  </g>
+  <g class="font float" style="animation-delay:.9s">
+    <rect class="boxOrange" x="980" y="216" width="260" height="146" rx="18"/>
+    <text class="h" x="1008" y="268">Distribution</text><text class="small" x="1008" y="300">Send fragments to</text><text class="small" x="1008" y="330">independent sinks</text>
+  </g>
+  <g class="font float" style="animation-delay:1.2s">
+    <rect class="box" x="1286" y="216" width="220" height="146" rx="18"/>
+    <text class="h" x="1314" y="268">Recovered File</text><text class="small" x="1314" y="300">Original restored</text><text class="small" x="1314" y="330">from sufficient set</text>
+  </g>
+
+  <!-- Arrows between top cards -->
+  <path d="M314 290H370" stroke="url(#arrowBlue)" stroke-width="7" marker-end="url(#arrow)" filter="url(#glow)"/>
+  <path d="M642 290H674" stroke="url(#arrowBlue)" stroke-width="7" marker-end="url(#arrow)" filter="url(#glow)"/>
+  <path d="M942 290H974" stroke="url(#arrowBlue)" stroke-width="7" marker-end="url(#arrow)" filter="url(#glow)"/>
+
+  <!-- Multi-sink panel -->
+  <rect class="boxHot" x="380" y="410" width="860" height="195" rx="18" opacity=".92"/>
+  <text x="408" y="458" class="font h">Multi-Sink Storage</text>
+  <text x="408" y="490" class="font small">Untrusted, replaceable fragment holders — no sink stores a full file</text>
+  <g class="font">
+    <ellipse cx="510" cy="540" rx="96" ry="24" fill="#06101e" stroke="#3a4e68" stroke-width="2"/><text class="label" x="445" y="546">Local Device</text>
+    <ellipse cx="730" cy="540" rx="104" ry="24" fill="#06101e" stroke="#3a4e68" stroke-width="2"/><text class="label" x="665" y="546">Cloud Sink</text>
+    <ellipse cx="965" cy="540" rx="112" ry="24" fill="#06101e" stroke="#3a4e68" stroke-width="2"/><text class="label" x="900" y="546">External Drive</text>
+    <ellipse cx="1180" cy="540" rx="100" ry="24" fill="#06101e" stroke="#3a4e68" stroke-width="2"/><text class="label" x="1114" y="546">Distributed Node</text>
+  </g>
+
+  <!-- Reconstruction -->
+  <g class="font float" style="animation-delay:1.5s">
+    <rect class="boxOrange" x="1286" y="422" width="220" height="178" rx="18"/>
+    <text class="h" x="1314" y="470">Reconstruction</text><text class="small" x="1314" y="502">Locate fragments</text><text class="small" x="1314" y="532">Verify + decrypt</text><text class="small" x="1314" y="562">Reassemble file</text>
+  </g>
+  <path d="M1396 420V370" stroke="url(#arrowBlue)" stroke-width="7" marker-end="url(#arrow)" filter="url(#glow)"/>
+  <path d="M1242 510H1278" stroke="url(#arrowBlue)" stroke-width="7" marker-end="url(#arrow)" filter="url(#glow)"/>
+
+  <!-- Animated distribution flows -->
+  <path class="flowB" d="M1110 364 C1110 390 1040 420 965 516" marker-end="url(#arrow)"/>
+  <path class="flowB" d="M1110 364 C1010 415 800 450 730 516" marker-end="url(#arrow)"/>
+  <path class="flowB" d="M1110 364 C920 400 640 450 510 516" marker-end="url(#arrow)"/>
+  <path class="flowO" d="M510 564 C660 632 1015 632 1320 545" marker-end="url(#arrowOrange)"/>
+  <path class="flowB" d="M730 564 C850 622 1070 620 1320 536" marker-end="url(#arrow)"/>
+  <path class="flowO" d="M965 564 C1065 620 1190 610 1320 525" marker-end="url(#arrowOrange)"/>
+  <path class="flowB" d="M1180 564 C1230 600 1280 585 1320 517" marker-end="url(#arrow)"/>
+
+  <!-- Core pulse behind sinks -->
+  <g class="orbit" opacity=".33"><circle cx="800" cy="415" r="240" fill="none" stroke="#63dfff" stroke-dasharray="6 16"/></g>
+  <g class="orbit2" opacity=".25"><circle cx="800" cy="415" r="300" fill="none" stroke="#ff9a2f" stroke-dasharray="10 20"/></g>
+  <circle cx="800" cy="415" r="170" fill="url(#coreGlow)" opacity=".32" class="pulse"/>
+
+  <!-- Moving particles -->
+  <g filter="url(#glow)">
+    <circle r="5" fill="#69e8ff"><animateMotion dur="3.6s" repeatCount="indefinite" path="M314 290H370"/></circle>
+    <circle r="5" fill="#69e8ff"><animateMotion dur="3.8s" repeatCount="indefinite" path="M642 290H674"/></circle>
+    <circle r="5" fill="#ff9a2f"><animateMotion dur="4s" repeatCount="indefinite" path="M942 290H974"/></circle>
+    <circle r="5" fill="#69e8ff"><animateMotion dur="5.5s" repeatCount="indefinite" path="M1110 364 C920 400 640 450 510 516"/></circle>
+    <circle r="5" fill="#ff9a2f"><animateMotion dur="5.2s" repeatCount="indefinite" path="M510 564 C660 632 1015 632 1320 545"/></circle>
+  </g>
+
+  <!-- telemetry chips -->
+  <g class="font" opacity=".98">
+    <rect x="80" y="650" width="330" height="38" rx="19" fill="#06101e" stroke="#254566"/><text x="105" y="675" class="tiny">STATE</text><text x="176" y="675" class="label" fill="#75f6ff">FRAGMENTED</text>
+    <rect x="440" y="650" width="330" height="38" rx="19" fill="#06101e" stroke="#254566"/><text x="465" y="675" class="tiny">SINKS</text><text x="535" y="675" class="label" fill="#75f6ff">REPLACEABLE</text>
+    <rect x="800" y="650" width="330" height="38" rx="19" fill="#06101e" stroke="#254566"/><text x="825" y="675" class="tiny">TRUTH</text><text x="900" y="675" class="label" fill="#ff9a2f">RECONSTRUCTION</text>
+    <rect x="1160" y="650" width="330" height="38" rx="19" fill="#06101e" stroke="#254566"/><text x="1185" y="675" class="tiny">OUTPUT</text><text x="1270" y="675" class="label" fill="#75f6ff">VERIFIED</text>
+  </g>
+
+  <text x="78" y="718" class="font small">Note: Diagram illustrates concept flow only — not production implementation details.</text>
+  <circle cx="1490" cy="92" r="5" fill="#66ffc8" class="blink"/><text x="1318" y="98" class="font tiny">SURVIVABILITY SIGNAL ACTIVE</text>
+</svg>
